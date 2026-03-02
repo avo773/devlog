@@ -1,79 +1,131 @@
+DevLog — Systems-First Developer Journal
 
+Built by Avory Banks
+React + TypeScript + Vite
 
+GitHub: https://github.com/avo773/devlog
 
+LinkedIn: https://www.linkedin.com/in/avobanks/
 
+Overview
 
+DevLog is a structured developer journal designed to demonstrate production-minded frontend engineering using React and TypeScript.
 
-# React + TypeScript + Vite
+This project is intentionally small but architected like a real product:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Typed data models
 
-Currently, two official plugins are available:
+Controlled forms
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+State-driven rendering
 
-## React Compiler
+Local persistence
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Feature layering
 
-## Expanding the ESLint configuration
+Clean UI structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Accessibility considerations
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+It is not just a static portfolio page.
+It is a functioning mini-application.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+What This Project Demonstrates
+Engineering Fundamentals
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React functional components
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+useState / useEffect / useMemo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Controlled form inputs
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Derived state
+
+Component composition
+
+Event handling patterns
+
+Conditional rendering
+
+Array mapping with keys
+
+TypeScript type safety
+
+Product Thinking
+
+Tag parsing and normalization
+
+Data persistence via localStorage
+
+Theme persistence (dark/light toggle)
+
+Export capability (JSON copy)
+
+Keyboard shortcut UX (Command Palette)
+
+Clean layout hierarchy
+
+Portfolio Signals
+
+Intentional architecture
+
+Feature completeness
+
+Clean UI consistency
+
+No unnecessary libraries
+
+Production mindset
+
+Features
+Core Journal Features
+
+Create log entries (title + body)
+
+Add tags (comma-separated parsing)
+
+Delete entries
+
+Persist entries across refresh
+
+Sort newest first
+
+Export entries as JSON
+
+UX Enhancements
+
+Dark / Light theme toggle
+
+Persistent theme preference
+
+Command Palette (Ctrl/Cmd + K)
+
+Skill Matrix section
+
+Project module cards
+
+Contact terminal (copy-to-clipboard email)
+
+Tech Stack
+
+Frontend:
+
+React
+
+TypeScript
+
+Vite
+
+Styling:
+
+Custom CSS (no UI framework)
+
+Persistence:
+
+localStorage
+
+Tooling:
+
+ESLint
+
+Git
