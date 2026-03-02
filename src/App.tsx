@@ -167,7 +167,7 @@ export default function App() {
               </a>
               <button
                 className="pill ghost"
-                onClick={asS36ync () => {
+                onClick={asSync () => {
                   await safeCopy(LINKS.email);
                   setCopied(true);
                   window.setTimeout(() => setCopied(false), 1100);
