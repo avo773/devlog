@@ -5,14 +5,14 @@ import pic from "./assets/pic.jpg";
 // Update these 3 links and you're done.
 // (LinkedIn must be real so the rubric passes.)
 const LINKS = {
-  linkedin: "https://www.linkedin.com/in/avorybanks/", // <-- change if needed
-  github: "https://github.com/avorybanks", // optional
-  email: "avory@example.com", // <-- change
+  linkedin: "https://www.linkedin.com/in/avobanks/", // <-- change if needed
+  github: "https://github.com/avo773", // optional
+  email: "avbanks@icstars.org", // <-- change
 };
 
 const ROLE_ROTATION = [
-  "AI Engineer",
-  "Full Stack Developer",
+  "A.I. Engineer",
+  "Full-Stack Developer",
   "Agent + RAG Builder",
   "API + Workflow Architect",
   "Product-First Engineer",
@@ -167,7 +167,7 @@ export default function App() {
               </a>
               <button
                 className="pill ghost"
-                onClick={async () => {
+                onClick={asS36ync () => {
                   await safeCopy(LINKS.email);
                   setCopied(true);
                   window.setTimeout(() => setCopied(false), 1100);
